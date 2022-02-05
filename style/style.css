@@ -40,7 +40,9 @@
     margin-left: 52px;
 }
 
-
+.button_container {
+    display: flex;
+}
 .button {
     margin-left: 10px;
     font-family: "Graphik-Semobold";
@@ -118,10 +120,7 @@ hr {
     font-weight: 400;
 }
 
-.size {
-    font-size: 15px;
-    line-height: 25px;
-}
+
 
 .not_main_text_style {
     width: 471px;
@@ -145,15 +144,14 @@ hr {
     margin-top: 25px;
 }
 
-
 .logo-bar {
     background-color: #FF9C7D;
-    height: 455px;
 }
 
 .logo-container {
-    padding-top: 108px;
+    padding: 108px 0;
 }
+
 .logo_text {
     display: flex;
     justify-content: center;
@@ -216,16 +214,20 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
     width: 300px;
     height: 350px;  
     margin-top: 79px;  
+}
+
+.card_app img {
+    margin-bottom: 30px;
 }
 
 .card_main_text {
     font-weight: 600;
     font-size: 25px;
     line-height: 35px;
+    margin-bottom: 30px;
 }
 
 .card_not_main_text {
@@ -238,15 +240,30 @@ hr {
 .team_card {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    height: 700px;
-    
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 187px;
+    width: 408px;
+}
+
+.team_card img {
+    width: 179px;
+    height: 205px;
+    margin-bottom: 49px;
 }
 
 .team_text_main {
     font-size: 30px;
     line-height: 40px;
+    margin-bottom: 33px;
+}
+
+.text_padding {
+    padding-top: 20px;
+}
+
+.team_card-link {
+    margin-top: 25px;
 }
 
 .chief_text {
@@ -256,7 +273,7 @@ hr {
 
 .cake-bar {
     background-color: #DABC98;
-    height: 332px;
+    padding: 88px 0 90px;
 }
 
 .chief_text_img {
@@ -270,7 +287,6 @@ hr {
     margin-left: 67px;
 }
 
-
 .stars_card {
     padding-left: 79px;
 }
@@ -280,13 +296,23 @@ hr {
     padding-right: 124px;
 }
 
-.img_stars {
-    margin-bottom: 20px;
+.container_stars {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 25px;
+
+}
+
+.stars_card-img {
+    margin-left: 6.25px;
 }
 
 .star-text {
+    font-size: 15px;
+    line-height: 25px;
     margin-top: 20px;
 }
+
 .integr-text {
     font-size: 25px;
     line-height: 30px;
@@ -311,6 +337,7 @@ hr {
     width: 791px;
     height: 150px;
 }
+
 .img-integration {
     margin-top: 25px;
     height: 445px;
@@ -402,6 +429,7 @@ hr {
     font-size: 15px;
     line-height: 15px;
     color: #000000;
+    display: block;
 }
 
 .menu li {
