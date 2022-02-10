@@ -13,8 +13,11 @@
 }
 
 .fix-size {
-    width: 1295px;
+    max-width: 1290px;
     margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 320px;
 }
 
 .container {
@@ -25,6 +28,13 @@
 
 .nav-bar {
     padding: 39px 0 36px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list {
+    display: flex;
 }
 
 .nav_text {
@@ -102,6 +112,7 @@ hr {
 
 .content-container_img {
     height: 632px;
+
 }
 .main_text {
     font-family: "Graphik-Semobold";
@@ -119,8 +130,6 @@ hr {
     font-family: "Graphik-Regular";
     font-weight: 400;
 }
-
-
 
 .not_main_text_style {
     width: 471px;
@@ -200,6 +209,12 @@ hr {
 .app-bar {
     background-color: #FFF8E4;
     padding-bottom: 147px;
+}
+
+.container_app_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .app-bar-text {
@@ -296,6 +311,12 @@ hr {
     padding-right: 124px;
 }
 
+.container_stars-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .container_stars {
     display: flex;
     align-items: flex-start;
@@ -334,8 +355,7 @@ hr {
     line-height: 75px;
     margin-top: 165px;
     text-align: center;
-    width: 791px;
-    height: 150px;
+    width: 784px;
 }
 
 .img-integration {
@@ -377,13 +397,12 @@ hr {
 
 .bottom_bar {
     background-color: #EEEEEE;
-    padding-top: 97px;
-    height: 800px;
+    padding: 97px 0 127px;
 }
 
 .menu_bar {
     display: flex;
-    justify-content: space-between;
+   justify-content: space-around;
 }
 
 .case-container {
@@ -411,8 +430,12 @@ hr {
     margin-top: 24px;
 }
 
+.bottom_bar_menu {
+    display: flex;
+}
+
 .menu_container {
-    width: 160px;
+    width: 200px;
 }
 
 .menu {
@@ -438,7 +461,13 @@ hr {
 
 .footer {
     background-color: #EEEEEE;
-    height: 125px;
+    padding-bottom: 30px;
+}
+
+.container_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footer_text {
@@ -452,6 +481,9 @@ hr {
 }
 
 .footer_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 30px;
 }
 
@@ -461,5 +493,567 @@ hr {
     font-size: 12px;
     line-height: 15px;
     margin-top: 30px;  
+}
+
+@media (max-width: 1290px) {
+    .container {
+        flex-direction: column;}
+
+    .button_container {
+        margin-bottom: 30px;
+    }
+
+    .head_button-size {
+        width: 200px;
+    }
+
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    .content {
+        margin-top: 10px;
+        margin-bottom: 50px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .content_img {
+        order: -1;
+    }
+
+    .not_main_text {
+        margin-top: 20px;
+    }
+    
+    .button-size {
+        width: 200px;
+        margin-top: 25px;
+    }
+
+    .logo-container {
+        padding: 50px 20px;
+    }
+
+    .logo-bar-style {
+        font-size: 40px;       
+    }
+
+    .container_img {
+        margin-top: 50px;
+    }
+
+    .content-container_img {
+        order: -1;
+    }
+
+    .app-bar {
+        padding-bottom: 20px;
+    }
+
+    .app-bar-text {
+        padding: 50px 0 20px 0;
+    }
+
+    .container_app_bar {
+        justify-content: row;
+    }
+
+    .card_app {
+        margin-top: 30px;
+    }
+
+    .card_app img {
+        margin-bottom: 15px;
+    }
+
+    .card_main_text {
+        margin-bottom: 15px;
+    }
+
+    .team_card {
+        width: auto;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 60px;
+    }
+
+    .team_card img {
+        margin-bottom: 25px;
+    }
+
+    .team_text_main {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .chief_text {
+        padding: 20px 0 40px;
+    }
+
+    .chief_text_img {
+        order: -1;
+        margin-bottom: 15px;
+    }
+
+    .cake-bar {
+        padding: 50px 0 50px;
+    }
+
+    .line {
+        border-right: 0ch;
+        padding-right: 0;
+    }
+
+    .line p {
+        border-right: 2px solid black;
+    }
+
+    .cake_text {
+        width: auto;
+        height: auto;
+        margin-left: 0;
+        margin-top: 20px;
+        padding: 0 30px 10px 0;
+        text-align: center;
+    }
+
+    .stars_card {
+        padding-left: 0;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    .integration-text {
+        margin-top: 50px;
+        font-size: 55px;
+        line-height: 65px;
+        width: auto;
+    }
+
+    .img-integration {
+        height: 355px;
+    }
+
+    .integration {
+        padding: 20px 0 40px;
+    }
+
+    .try-bottom {
+        width: 200px;
+        margin-top: 30px;
+    }
+
+    .bottom_bar {
+        padding-top: 20px;
+    }
+
+    .menu_bar {
+        display: block;
+        padding-bottom: 20px;
+    }
+
+    .case-container {
+        align-items: center;
+    
+    }
+
+    .img-bike {
+        margin: 5px 0 10px;
+    }
+
+    .bottom_text {
+        width: auto;
+        height: 25px;
+        margin-bottom: 15px;
+    }
+
+    .menu_container {
+        display: inline-block;
+    }
+
+    .bottom_bar_menu {
+        justify-content: space-around;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    .menu {
+        margin-top: 5px;
+    }
+
+    .not_main_text {
+        margin-top: 10px;
+    }
+
+
+
+}
+
+@media (max-width: 770px) {
+    .nav-bar {
+        flex-direction: column;
+    }
+    
+    .nav-bar img {
+        margin-bottom: 25px;
+    }
+
+    .item {
+        margin-left: 25px;
+    }
+
+    .image_platform {
+        width: 500px;
+        height: 400px;
+    }
+
+    .main_text_style {
+        width: 510px;
+        font-size: 48px;
+        line-height: 50px;
+        height: 170px;
+    }
+
+    .not_main_text {
+        margin: 0;
+        padding: 0 20px;
+    }
+    
+    .not_main_text_style {
+        font-size: 20px;
+        height: 110px;
+    }
+
+    .content {
+        margin-bottom: 30px;
+    }
+
+    .logo-bar-style {
+        line-height: 40px;
+        font-size: 30px;
+    }
+
+    .container_img {
+        text-align: center;
+        display: block;
+        margin-top: 0;
+    }
+
+    .container_img img {
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+    .content-container_img {
+        height: 500px;
+        text-align: center;
+    }
+
+    .main-container-style {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .not-main-container-style {
+        font-size: 15px;
+        line-height: 20px;
+        padding: 20px;
+    }
+
+    .link_text {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .app-bar-text {
+        font-size: 40px;
+        line-height: 50px;
+        padding: 15px 20px 15px 20px;
+    }
+
+    .container_app_bar {
+        flex-direction: column ;
+    }
+
+    .card_app {
+        height: 280px;
+    }
+
+    .team_text_main {
+        font-size: 20px;
+        line-height: 30px;
+        padding: 0 20px;
+    }
+
+    .cake_text {
+        font-size: 25px;
+        line-height: 40px;
+        padding-right: 15px;
+    }
+
+    .chief_text-logo {
+        padding-left: 20px;
+    }
+    
+
+    .img-integration {
+        height: 220px;
+    }
+
+    .integration-text {
+        font-size: 20px;
+        line-height: 35px;
+        margin-top: 20px;
+    }
+
+    .integr-text {
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 10px;
+        width: auto;
+    }
+
+    .try-bottom {
+        margin-top: 15px;
+    }
+
+    .case_text {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .bottom_text {
+        font-size: 15px;
+    }
+
+    .bottom_bar_menu {
+        flex-wrap: wrap;
+    }
+
+    .menu_container {
+        margin-bottom: 30px;
+    }
+
+    .bottom_bar {
+        padding-bottom: 30px;
+    }
+      
+}
+
+@media (max-width: 510px) {
+    .list,
+    .button_container  {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        margin-bottom: 15px;
+        margin-left: 0;
+    }
+
+    .nav-bar {
+        padding: 25px 0 15px 0;
+    }
+
+    .button {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .head_button-size {
+        width: 310px;
+    }
+
+    .image_platform {
+        width: 320px;
+        height: auto;
+    }
+
+    .main_text_style {
+        width: 320px;
+        font-size: 30px;
+        line-height: 35px;
+        height: 120px;
+    }
+
+    .not_main_text_style {
+        width: 320px;
+        font-size: 15px;
+        height: 100px;
+        line-height: 20px;
+    }
+
+    .button-size {
+        width: 310px;
+        margin-top: 5px;
+        height: 50px;
+    }
+
+    .last_text {
+        font-size: 10px;
+        line-height: 15px;
+        margin-top: 10px;
+        padding-left: 20px;
+    }
+
+    .chief_text-logo img {
+        padding-left: 20px;
+    }
+
+    .container_img {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .logo-bar-style {
+        line-height: 30px;
+        font-size: 25px;
+    }
+
+    .content-container_img {
+        height: 320px;
+    }
+
+    .main-container-style {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .not-main-container-style {
+        font-size: 15px;
+        line-height: 15px;
+        width: auto;
+    }
+
+    .start-link {
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+
+    .content {
+        margin-bottom: 5px;
+    }
+    
+    .app-bar-text {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .card_app {
+        margin-top: 10px;
+    }
+
+    .card_main_text {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .card_not_main_text {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .app-bar-text {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .team_text_main {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .team_card-link {
+        margin-top: 10px;
+    }
+
+    .stars_card {
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+
+    .stars_card img {
+        height: auto;
+    }
+
+    .cake_text {
+        font-size: 20px;
+        line-height: 30px;
+        padding-right: 10px;
+    }
+
+    .container_stars {
+        margin-top: 15px;
+    }
+
+    .star-text {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .img-integration {
+        height: 150px;
+    }
+
+    .see-bottom {
+        width: 310px;
+    }
+
+    .bottom_text {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .bottom_bar_menu {
+        margin-left: 0;
+    }
+
+    .menu_container {
+        text-align: center;
+    }
+
+    .bottom_bar {
+        padding-bottom: 20px;
+    }
+
+    .footer {
+        padding-bottom: 15px;
+    }
+
+    .footer_content {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .footer_content img {
+        margin-bottom: 10px;
+    }
+
+    .footer_text {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .container_footer {
+        flex-direction: column;
+    }
+
+    .footer_text_right {
+        margin-top: 0;
+        text-align: center;
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .try-bottom {
+        width: 310px;
+    }
 }
    
